@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Quản lí thông tin</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            Cổng thông tin quản lí
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ </a></li>
+                <li><a href="#News">Tin tức</a></li>
+                <li><a href="#eventNews">Sự kiện</a></li>
+                <li><a href="#warningNews">Cảnh báo </a></li>
+            </ul>
+            <div class="bar">
+                <i class="open fa-solid fa-bars-staggered"></i>
+                <i class="close fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <div class="topHeadlines">
+        <div class="left">
+            <div class="title">
+                <h2>Tin mới nhất</h2>
+            </div>
+            <div class="img" id="breakingImg">
+                
+            </div>
+            <div class="text" id="breakingNews">
+                <div class="title">
+                    
+                </div>
+                <div class="description">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <h2>Tin tức hàng đầu</h2>
+            </div>
+            <div class="topNews">
+    
+            </div>
+
+        </div>
+    </div>
+    <div class="page2">
+        <div class="news" id="News">
+            <div class="title">
+                <h2>Tin tức</h2>
+            </div>
+            <div class="newsBox">
+            </div>
+        </div>
+        <div class="news" id="eventNews">
+            <div class="title">
+                <h2>Sự kiện</h2>
+            </div>
+            <div class="newsBox">
+            </div>
+        </div>
+        <div class="news" id="warningNews">
+            <div class="title">
+                <h2>Cảnh báo</h2>
+            </div>
+            <div class="newsBox">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Loại</p>
+                    <div>
+                        <p>Tin Tức</p>
+                    </div>
+                    <div>
+                        <p>Sự kiện</p>
+                    </div>
+                    <div>
+                        <p>Cảnh báo </p>
+                    </div>
+                </div>
+                <div class="contactUs">
+                    <div class="contact">
+                        <p>Liên hệ</p>
+                        <div>Phone No. - <span>0376366195</span></div>
+                        <div>Email - <span>trntrang2006@gmail.com</span></div>
+                        <div>Address - <span>Hà Nội, Việt Nam</span></div>
+                    </div>
+                  
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+
+
+
+    <<!-- Khu vực hiển thị danh sách bài báo -->
+<div id="newsSection">
+  <div id="breakingNews"></div>
+  <div class="topNews"></div>
+  <div id="News" class="newsBox"></div>
+  <div id="eventNews" class="newsBox"></div>
+  <div id="warningNews" class="newsBox"></div>
+</div>
+
+<!-- Khu vực hiển thị nội dung chi tiết bài báo -->
+<div id="articleView" style="display: none;">
+  <button id="backBtn">← Quay lại</button>
+  <h2 id="articleTitle"></h2>
+  <img id="articleImage" src="" alt="article image" />
+  <p id="articleContent"></p>
+</div>
+
+
+
+    
+
+
+    <script src="main1.js"></script>
+</body>
+</html>
